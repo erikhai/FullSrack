@@ -1,0 +1,60 @@
+.football-clubs-carousel-container{
+    width: 100vw;
+    background-color: black;
+}
+
+
+.football-club-logo {
+    height: 300px;
+    display: flex;
+    left: 10%;
+    justify-content: flex-start; /* Align items towards the left */
+    align-items: center; /* Vertically center items */
+    padding-bottom: 20px; /* Adjust the left margin to move it more towards the left */
+    
+}
+
+.football-club-logo > img {
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+}
+
+.football-club-card-container{
+    height: 550px;
+    background-color: black;
+
+}
+
+.football-club-card {
+    position: relative; /* Ensure relative positioning for absolute positioning of pseudo-element */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-image: var(--img); /* Set background image directly */
+    background-size: cover;
+    background-position: center;
+}
+
+.football-club-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Position at the bottom */
+    left: 0;
+    width: 100%;
+    height: 40%; /* Adjust height of the gradient overlay as needed */
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)); /* Linear gradient from transparent to black */
+}
+.football-club-detail {
+    position: absolute;
+    top: 200px;
+    bottom: 20px; /* Adjust position to avoid overlap */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%; /* Adjust width as needed */
+}
+
+.football-club-name{
+    color: black;
+}
