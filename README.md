@@ -4,6 +4,16 @@
 https://www.youtube.com/watch?v=5PdEmeopJVQ&t=7053s
 From this tutorial, I have been introduced what is needed for backend and how the frontend and backend link together. 
 
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 # What did I learn from this project?
 1. MongoDb
 2. How to use java for backend
